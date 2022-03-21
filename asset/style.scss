@@ -144,7 +144,7 @@ header{
               @media screen and (max-width: $bp-small) {
                  padding-top: 4rem;
                   
-                }
+                } 
 
         }
         p{
@@ -256,6 +256,20 @@ header{
             color: black;
         }
     }
+
+    @media screen and (max-width: $bp-large) {
+        padding: 60px;
+         
+       }
+
+     @media screen and (max-width: $bp-medium) {
+         padding: 50px;   
+        }
+
+      @media screen and (max-width: $bp-small) {
+         padding: 40px;
+          
+        }
 }
 
 .advanced{
@@ -265,9 +279,11 @@ header{
             .background-color{
                 background-color: #FDE9E0;
                 position: absolute;
+                display: none;
                 top: 244%;
                 left: 15%;
                 padding: 210px;
+
             }
             .border{
                 position:relative;
@@ -276,6 +292,20 @@ header{
                 img{
                     width: 420px;
                     object-fit: cover;
+
+                    @media screen and (max-width: $bp-large) {
+                        width: 350px;
+                         
+                       }
+             
+                     @media screen and (max-width: $bp-medium) {
+                         width: 250px;
+                        }
+             
+                      @media screen and (max-width: $bp-small) {
+                         width: 150;
+                          
+                        }
                 }
             }
 
@@ -287,6 +317,20 @@ header{
                 font-size: 4rem;
                 font-weight: lighter;
                 margin-bottom: 20px;
+
+                @media screen and (max-width: $bp-large) {
+                    font-size: 3rem;
+                     
+                   }
+         
+                 @media screen and (max-width: $bp-medium) {
+                     font-size: 2rem;
+                    }
+         
+                  @media screen and (max-width: $bp-small) {
+                     font-size: 1rem;
+                      
+                    }
             }
             hr{
                 margin-bottom: 50px;
@@ -300,6 +344,21 @@ header{
                 word-spacing: 1px;
                 font-weight: 400;
                 margin-bottom: 40px;
+
+                
+                @media screen and (max-width: $bp-large) {
+                    font-weight: 300;
+                     
+                   }
+         
+                 @media screen and (max-width: $bp-medium) {
+                     font-weight: 200;
+                    }
+         
+                  @media screen and (max-width: $bp-small) {
+                     font-weight: 100;
+                      
+                    }
             }
             a{
               display: inline-block;
@@ -340,6 +399,21 @@ header{
             font-size: 2.4rem;
             font-weight: lighter;
             margin-bottom: 20px;
+
+            
+            @media screen and (max-width: $bp-large) {
+                font-size: 2rem;
+                 
+               }
+     
+             @media screen and (max-width: $bp-medium) {
+                 font-size: 1.4rem;
+                }
+     
+              @media screen and (max-width: $bp-small) {
+                 font-size: 1rem;
+                  
+                }
         }
         hr{
             margin-bottom: 20px;
@@ -353,6 +427,21 @@ header{
             font-weight: 400;
             margin-bottom: 40px;
             font-size: 0.9rem;
+
+            
+            @media screen and (max-width: $bp-large) {
+                font-size: 0.7rem;
+                 
+               }
+     
+             @media screen and (max-width: $bp-medium) {
+                 font-size: 0.6rem;
+                }
+     
+              @media screen and (max-width: $bp-small) {
+                 font-size: 0.5rem;
+                  
+                }
         }
         a{
           position: relative;
@@ -376,10 +465,24 @@ header{
     background-size: 100%;
     margin-bottom: 70px;
     h1{
-        font-size: 3em;
+        font-size: 3rem;
         font-family: 'Dancing Script', cursive;
         text-align:center;
         margin-bottom: 80px;
+
+        @media screen and (max-width: $bp-large) {
+            font-size: 2rem;
+             
+           }
+ 
+         @media screen and (max-width: $bp-medium) {
+             font-size: 1.5rem;
+            }
+ 
+          @media screen and (max-width: $bp-small) {
+             font-size: 1rem;
+              
+            }
     }
     p{
         font-family: 'Montserrat', sans-serif;
@@ -388,6 +491,21 @@ header{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
+   
+        @media screen and (max-width: $bp-large) {
+            grid-gap: 7px;
+             
+           }
+ 
+         @media screen and (max-width: $bp-medium) {
+             grid-gap: 6px;
+            }
+ 
+          @media screen and (max-width: $bp-small) {
+             grid-gap: 4px;
+              
+            }
+
     }
 }
 
