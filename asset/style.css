@@ -1,0 +1,959 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.6rem;
+  background-color: white;
+}
+
+nav h1 {
+  font-family: 'Encode Sans Expanded', sans-serif, cursive;
+  font-size: 30px;
+}
+
+nav .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+nav .sidenav a {
+  text-align: center;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .sidenav a:hover {
+  color: #f1f1f1;
+}
+
+nav .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  nav .sidenav {
+    padding-top: 15px;
+  }
+  nav .sidenav a {
+    font-size: 18px;
+  }
+}
+
+nav span {
+  position: absolute;
+  left: 95%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+header {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 87vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .text {
+  position: absolute;
+  left: 5%;
+  top: 35%;
+}
+
+header .text h1 {
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 12px;
+  font-size: 7rem;
+  font-weight: lighter;
+}
+
+header .text p {
+  word-spacing: 4px;
+  font-size: 20px;
+  margin-bottom: 3em;
+  font-family:  'Encode Sans Expanded', sans-serif;
+}
+
+header .text button {
+  background-color: #F7D2BE;
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  width: 150px;
+  height: 40px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 100px;
+}
+
+.grid .cardText-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid .cardText-image .right {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 0px;
+}
+
+.grid .cardText-image .left {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 0px;
+}
+
+.grid .cardText-image .text-card {
+  padding: 20px;
+}
+
+.grid .cardText-image .text-card h1 {
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 20px;
+}
+
+.grid .cardText-image .text-card hr {
+  margin-bottom: 10px;
+  background-color: black;
+  height: 4px;
+  width: 30%;
+  border: 0;
+}
+
+.grid .cardText-image .text-card p {
+  font-family:  'Encode Sans Expanded', sans-serif;
+  word-spacing: 2px;
+  font-weight: 400;
+}
+
+.grid .cardText-image .c2 {
+  color: black;
+}
+
+.advanced {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+}
+
+.advanced .border-image .background-color {
+  background-color: #FDE9E0;
+  position: absolute;
+  top: 240%;
+  left: 11%;
+  padding: 210px;
+}
+
+.advanced .border-image .border {
+  position: relative;
+  border: 5px solid #FBD1BE;
+  padding: 30px 10px 20px 50px;
+}
+
+.advanced .border-image .border img {
+  width: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.advanced .adtext {
+  -webkit-transform: translate(17%, 26%);
+          transform: translate(17%, 26%);
+}
+
+.advanced .adtext h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.advanced .adtext hr {
+  margin-bottom: 50px;
+  background-color: black;
+  height: 4px;
+  width: 20%;
+  border: 0;
+}
+
+.advanced .adtext p {
+  font-family:  'Encode Sans Expanded', sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.advanced .adtext a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.advanced .adtext a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FBD1BE;
+  top: 100%;
+}
+
+.advanced .adtext a:hover {
+  color: #c4c3c3;
+}
+
+.advanceds {
+  background-color: #EAE5E9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 0px 80px 0px;
+}
+
+.advanceds .advimg img {
+  width: 680px;
+}
+
+.advanceds .adtexts {
+  -webkit-transform: translate(5%, 29%);
+          transform: translate(5%, 29%);
+}
+
+.advanceds .adtexts h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.advanceds .adtexts hr {
+  margin-bottom: 20px;
+  background-color: black;
+  height: 2px;
+  width: 10%;
+  border: 0;
+}
+
+.advanceds .adtexts p {
+  font-family:  'Encode Sans Expanded', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+}
+
+.advanceds .adtexts a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  background-color: #111;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.advanceds .adtexts a:hover {
+  color: #c4c3c3;
+  color: ;
+}
+
+.client {
+  padding: 5rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 70px;
+}
+
+.client h1 {
+  font-size: 3em;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.client p {
+  font-family:  'Encode Sans Expanded', sans-serif;
+}
+
+.client .clientText {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.treatment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: 50% 50%;
+  padding: 8rem;
+}
+
+.treatment .treimg img {
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover; 
+}
+
+.treatment .treCard {    
+  background-color: #111;
+  color: white;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  padding: 30px;
+} 
+
+.treatment .treCard .border {
+  border: 1px solid white;
+  padding: 40px;
+}
+
+.treatment .treCard h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: lighter;
+  margin-bottom: 20px; 
+}
+
+.treatment .treCard hr {
+  margin-bottom: 50px;
+  background-color: white;
+  height: 4px;
+  width: 20%;
+  border: 0;
+}
+
+.treatment .treCard p {
+  font-family:  'Encode Sans Expanded', sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.massage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 170px;
+}
+
+.massage .mestext {
+  -webkit-transform: translate(-10%, 13%);
+          transform: translate(-10%, 13%);
+}
+
+.massage .mestext h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.massage .mestext hr {
+  margin-bottom: 50px;
+  background-color: black;
+  height: 4px;
+  width: 20%;
+  border: 0;
+}
+
+.massage .mestext p {
+  font-family:  'Encode Sans Expanded', sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.massage .mestext a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.massage .mestext a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffdbcb;
+  top: 100%;
+}
+
+.massage .mestext a:hover {
+  color: #cac6c4;
+}
+
+.massage .border-image .background-color {
+  background-color: #FDE9E0;
+  position: absolute;
+  top: 628%;
+  left: 60%;
+  padding: 200px;
+}
+
+.massage .border-image .border {
+  position: relative;
+  border: 4px solid #FBD1BE;
+  padding: 0px 0px 30px 30px;
+}
+
+.massage .border-image .border img {
+  width: 420px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact {
+  background-position: 50% 50%;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .form {
+  background-color: #111;
+  color: white;
+  width: 55%;
+  padding: 30px;
+}
+
+.contact .form form {
+  border: 2px solid white;
+  padding: 30px;
+}
+
+.contact .form h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: lighter;
+  margin-bottom: 8px;
+}
+
+.contact .form hr {
+  margin-bottom: 12px;
+  background-color: white;
+  height: 4px;
+  width: 20%;
+  border: 0;
+}
+
+.contact .form p {
+  margin-top: 10px;
+  font-family:  'Encode Sans Expanded', sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.contact .form button {
+  margin-left: 64px;
+  padding: 10px;
+  background-color: #F7D2BE;
+  border: none;
+}
+
+.contact .form .form-contact {
+  margin-bottom: 7px;
+}
+
+.contact .form .form-contact input, .contact .form .form-contact textarea {
+  width: 400px;
+  padding: 10px;
+}
+
+footer {
+  padding: 8rem;
+  height: 30vh;
+  background-color: black;
+  color: white;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+footer .container .footer-text {
+  margin-right: 20%;
+}
+
+footer .container .footer-text h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 8px;
+}
+
+footer .container .footer-text p {
+  font-family: 'Encode Sans Expanded', sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+footer .logo {
+  text-align: center;
+}
+
+@media screen and (max-width: 868px) {
+  .grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 80px;
+  }
+  .advanced {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr); 
+    padding: 10px;
+  }
+  .advanced .adtext {
+    -webkit-transform: translate(5%, 10%);
+            transform: translate(5%, 10%);
+    padding: 20px;
+  }
+  .advanced .border-image .background-color {
+    display: none;
+    top: 355%; 
+  }
+  .advanced .border-image .border img {
+    width: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .advanceds {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 200px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .advanceds .advimg img {
+    width: 330px;
+    height: 430px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .advanceds .adtexts {
+    padding: 5px;
+    -webkit-transform: translate(0%, 20%);
+            transform: translate(0%, 20%);
+    height: 430px;
+  }
+  .advanceds .adtexts h1 {
+    font-size: 40px;
+  }
+  .advanceds .adtexts p {
+    font-size: 14px;
+  }
+  .treatment {
+    margin-bottom: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-position: 50% 50%;
+    padding: 4rem;
+  }
+  .treatment .treimg img {
+    width: 300px;
+    height: 80vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .treatment .treCard {
+    padding: 17px;
+    background-color: #111;
+    color: white;
+  }
+  .treatment .treCard .border {
+    border: 1px solid white;
+    padding: 50px;
+  }
+  .treatment .treCard h1 {
+    font-size: 40px;
+  }
+  .treatment .treCard p {
+    font-size: 17px;
+  }
+  .massage {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    margin-bottom: 100px;
+  }
+  .massage .mestext {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    padding: 40px;
+    margin-bottom: 60px;
+  }
+  .massage .border-image .background-color {
+    display: none;
+    background-color: #FDE9E0;
+    position: absolute;
+    top: 1285%;
+    left: 40%;
+    width: 300px;
+  }
+  .massage .border-image .border {
+    position: relative;
+    border: 4px solid #FBD1BE;
+    padding: 0px 0px 50px 60px;
+  }
+  .massage .border-image .border img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact .form {
+    background-color: #111;
+    color: white;
+    width: 100%;
+    padding: 50px;
+  }
+  .contact .form form {
+    padding: 50px;
+  }
+  .contact .form h1 {
+    font-size: 3rem;
+  }
+  .contact .form hr {
+    height: 2px;
+  }
+  .contact .form p {
+    margin-top: 10px;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    word-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .contact .form button {
+    position: absolute;
+    left: 35%;
+  }
+  .contact .form .form-contact {
+    margin-bottom: 7px;
+  }
+  .contact .form .form-contact input, .contact .form .form-contact textarea {
+    width: 300px;
+    padding: 10px;
+  }
+  footer {
+    padding: 2rem;
+    height: 40vh;
+    background-color: black;
+    color: white;
+  }
+  footer .container {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav span {
+    left: 86%;
+  }
+  header .text {
+    left: 7%;
+    top: 40%;
+  }
+  header .text h1 {
+    font-size: 70px;
+  }
+  header .text p {
+    font-size: 15px;
+  }
+  header .text button {
+    width: 140px;
+    height: 30px;
+  }
+  .grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 100px;
+  }
+  .grid .cardText-image {
+    display: block;
+  }
+  .grid .cardText-image .right {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-left: 0px;
+  }
+  .grid .cardText-image .left {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 0px;
+  }
+  .grid .cardText-image .text-card {
+    padding: 50px;
+    margin-left: 0;
+  }
+  .grid .cardText-image .text-card h1 {
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .grid .cardText-image .text-card hr {
+    margin-bottom: 10px;
+    background-color: black;
+    height: 2px;
+    width: 30%;
+    border: 0;
+  }
+  .grid .cardText-image .text-card p {
+    font-family:  'Encode Sans Expanded', sans-serif;
+    font-weight: 200;
+  }
+  .grid .cardText-image .c1 {
+    margin-left: 0px;
+  }
+  .grid .cardText-image .c2 {
+    margin-right: 0px;
+    color: black;
+  }
+  .advanced {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 80px;
+  }
+  .advanced .border-image {
+    margin-bottom: 120px;
+  }
+  .advanced .border-image .background-color {
+    top: 556%;
+    left: 33%;
+    padding: 230px 150px 230px 150px;
+  }
+  .advanced .border-image .border {
+    padding: 15px -10px 25px 30px;
+  }
+  .advanced .border-image .border img {
+    width: 300px;
+    height: 460px;
+  }
+  .advanced .adtext {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  .advanced .adtext h1 {
+    font-size: 2.4rem;
+  }
+  .advanced .adtext hr {
+    height: 2px;
+  }
+  .advanced .adtext p {
+    font-size: 0.9rem;
+  }
+  .advanceds {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 0px 0px 0px 0px;
+  }
+  .advanceds .advimg img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 40vh;
+  }
+  .advanceds .adtexts {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    padding: 65px;
+  }
+  .advanceds .adtexts h1 {
+    font-size: 2rem;
+  }
+  .advanceds .adtexts hr {
+    height: 2px;
+  }
+  .advanceds .adtexts p {
+    font-size: 0.9rem;
+  }
+  .advanceds .adtexts a {
+    font-size: 0.8rem;
+  }
+  .client {
+    margin-bottom: 70px;
+  }
+  .client h1 {
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .client p {
+    font-family:  'Encode Sans Expanded', sans-serif;
+  }
+  .client .clientText {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .client .clientText div {
+    margin-bottom: 35px;
+  }
+  .treatment {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
+  }
+  .treatment .treimg img {
+    width: 400px;
+  }
+  .massage {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
+    margin-bottom: 100px;
+  }
+  .massage .mestext {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    padding: 40px;
+    margin-bottom: 60px;
+  }
+  .massage .border-image .background-color {
+    background-color: #FDE9E0;
+    position: absolute;
+    top: 1285%;
+    left: 40%;
+    width: 300px;
+  }
+  .massage .border-image .border {
+    position: relative;
+    border: 4px solid #FBD1BE;
+    padding: 0px 0px 50px 60px;
+  }
+  .massage .border-image .border img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact .form {
+    background-color: #111;
+    color: white;
+    width: 100%;
+    padding: 30px;
+  }
+  .contact .form h1 {
+    font-size: 3rem;
+  }
+  .contact .form hr {
+    height: 2px;
+  }
+  .contact .form p {
+    margin-top: 10px;
+    font-family:  'Encode Sans Expanded', sans-serif;
+    word-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .contact .form button {
+    margin-left: 10px;
+    padding: 15px;
+    background-color: #F7D2BE;
+  }
+  .contact .form .form-contact {
+    margin-bottom: 7px;
+  }
+  .contact .form .form-contact input, .contact .form .form-contact textarea {
+    width: 300px;
+    padding: 10px;
+  }
+  footer {
+    padding: 2rem;
+    height: 60vh;
+    background-color: black;
+    color: white;
+  }
+  footer .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 60px;
+  }
+  footer .container .footer-text {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

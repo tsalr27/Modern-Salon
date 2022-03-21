@@ -1,0 +1,997 @@
+// Responsive breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 64em;   // 1024px
+$bp-medium: 50em;  // 800px
+$bp-small: 30em;   // 480px
+$bp-smallest: 25em;  // 400px
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans Expanded', sans-serif;
+  }
+
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+      overflow-x: hidden;
+  }
+
+  
+nav{
+    display: flex;
+    padding: 1.6rem;
+    background-color: rgb(255, 255, 255);
+    h1{
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+
+        @media screen and (max-width: $bp-large) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $bp-medium) {
+            font-size: 15px;
+        }
+
+         @media screen and (max-width: $bp-small) {
+            font-size: 10px;
+        }
+   
+   
+
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+
+        @media screen and (max-width: $bp-large) {
+           padding-top: 30px;
+            
+          }
+
+        @media screen and (max-width: $bp-medium) {
+            padding-top: 25px;   
+           }
+
+         @media screen and (max-width: $bp-small) {
+            padding-top: 15px;
+             
+           }
+      }
+      
+      .sidenav a {
+        text-align: center;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+        @media screen and (max-width: $bp-large) {
+            font-size: 30px;
+             
+           }
+ 
+         @media screen and (max-width: $bp-medium) {
+             font-size: 25px;   
+            }
+ 
+          @media screen and (max-width: $bp-small) {
+             font-size: 15px;
+              
+            }
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+     
+      span{
+        position: absolute;
+        left: 95%;
+        font-size: 30px;
+        cursor: pointer;
+      }
+}
+
+header{
+    background-position: 60% 60%;
+    background-repeat: no-repeat;
+    height: 87vh;
+    object-fit: cover;
+    .text{
+        position: absolute; 
+        left: 5%;
+        top: 35%;
+        h1{
+            font-family: 'Dancing Script', cursive;
+            margin-bottom: 12px;
+            font-size: 7rem;
+            font-weight: lighter;
+
+            @media screen and (max-width: $bp-large) {
+                padding-top: 6rem;
+                 
+               }
+     
+             @media screen and (max-width: $bp-medium) {
+                 padding-top: 5rem;   
+                }
+     
+              @media screen and (max-width: $bp-small) {
+                 padding-top: 4rem;
+                  
+                }
+
+        }
+        p{
+            word-spacing: 4px;
+            font-size: 20px;
+            margin-bottom: 3em;
+            font-family: 'Montserrat', sans-serif;
+
+            @media screen and (max-width: $bp-large) {
+                font-size: 15px;
+                 
+               }
+     
+             @media screen and (max-width: $bp-medium) {
+                 font-size: 10px;   
+                }
+     
+              @media screen and (max-width: $bp-small) {
+                 font-size: 5px;
+                  
+                }
+        }
+        button{
+            background-color: #F7D2BE;
+            font-weight: bold;
+            font-size: 17px;
+            border: none;
+            width: 150px;
+            height: 40px;
+            
+            @media screen and (max-width: 768px) {
+                font-size: 15px;
+            }
+           
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px;
+    .cardText-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .right{
+            width: 50%;
+            object-fit: cover;
+            margin-left: 0px;
+        }
+        .left{
+            width: 50%;
+            object-fit: cover;
+            margin-right: 0px;
+        }
+        .text-card{
+            padding: 20px;
+            h1{
+                font-family: 'Dancing Script', cursive;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: $bp-large) {
+                    margin-bottom: 15px;
+                     
+                   }
+         
+                 @media screen and (max-width: $bp-medium) {
+                     margin-bottom: 10px;   
+                    }
+         
+                  @media screen and (max-width: $bp-small) {
+                     margin-bottom: 5px;
+                      
+                    }
+            }
+            hr{
+                margin-bottom: 10px;
+                background-color: black;
+                height: 4px;
+                width: 30%;
+                border: 0;
+            }
+            p{
+                font-family: 'Montserrat', sans-serif;
+                word-spacing: 2px;
+                font-weight: 400;
+
+                @media screen and (max-width: $bp-large) {
+                    font-weight: 200;
+                     
+                   }
+         
+                 @media screen and (max-width: $bp-medium) {
+                     font-weight: 100;   
+                    }
+         
+                  @media screen and (max-width: $bp-small) {
+                     font-weight: 50;
+                      
+                    }
+            }
+        }
+        .c1{
+        
+        }
+        .c2{
+            
+            color: black;
+        }
+    }
+}
+
+.advanced{
+        display: flex;
+        padding: 3rem;
+        .border-image{
+            .background-color{
+                background-color: #FDE9E0;
+                position: absolute;
+                top: 244%;
+                left: 15%;
+                padding: 210px;
+            }
+            .border{
+                position:relative;
+                border: 5px solid #FBD1BE;
+                padding: 30px 10px 20px 50px;
+                img{
+                    width: 420px;
+                    object-fit: cover;
+                }
+            }
+
+        }
+        .adtext{
+            transform: translate(17%, 26%);
+            h1{
+                font-family: 'Dancing Script', cursive;
+                font-size: 4rem;
+                font-weight: lighter;
+                margin-bottom: 20px;
+            }
+            hr{
+                margin-bottom: 50px;
+                background-color: black;
+                height: 4px;
+                width: 20%;
+                border: 0;
+            }
+            p{
+                font-family: 'Montserrat', sans-serif;
+                word-spacing: 1px;
+                font-weight: 400;
+                margin-bottom: 40px;
+            }
+            a{
+              display: inline-block;
+              position: relative;
+              text-decoration: none;
+              color: black;
+            }
+            a:before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: rgb(0, 0, 0);
+                top: 100%; 
+            }
+            a:hover{
+                color:red;
+            }
+    
+        }
+}
+
+.advanceds{
+    background-color: #EAE5E9;
+    display: flex;
+    margin: 100px 0px 80px 0px;
+
+    .advimg{
+        img{
+            width: 680px;
+        }
+    }
+
+    .adtexts{
+        transform: translate(5%, 29%);
+        h1{
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.4rem;
+            font-weight: lighter;
+            margin-bottom: 20px;
+        }
+        hr{
+            margin-bottom: 20px;
+            background-color: black;
+            height: 2px;
+            width: 10%;
+            border: 0;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+        a{
+          position: relative;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+          background-color: #111;
+          padding: 5px;
+          font-size: 15px;
+          
+        }
+        a:hover{
+            color:red;
+        }
+
+    }
+}
+
+.client{
+    padding: 5rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 70px;
+    h1{
+        font-size: 3em;
+        font-family: 'Dancing Script', cursive;
+        text-align:center;
+        margin-bottom: 80px;
+    }
+    p{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .clientText{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+.treatment{
+    display: flex;
+    background-position: 50% 50%;
+    padding: 8rem;
+    .treimg{
+        img{
+            width: 400px; 
+            object-fit: cover;
+        }
+    }
+    .treCard{
+        background-color: #111;
+        color: white;
+        transform: translate(0%, 0%);
+        padding: 30px;
+        .border{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 40px;
+        }
+        h1{
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            font-weight: lighter;
+            margin-bottom: 20px;
+        }
+        hr{
+            margin-bottom: 50px;
+            background-color: rgb(255, 255, 255);
+            height: 4px;
+            width: 20%;
+            border: 0;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            word-spacing: 1px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.massage{
+    display: flex;
+    padding: 170px;
+    .mestext{
+        transform: translate( -10%, 13%);
+        h1{
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            font-weight: lighter;
+            margin-bottom: 20px;
+        }
+        hr{
+            margin-bottom: 50px;
+            background-color: black;
+            height: 4px;
+            width: 20%;
+            border: 0;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            word-spacing: 1px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+        a{
+          display: inline-block;
+          position: relative;
+          text-decoration: none;
+          color: black;
+        }
+        a:before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: rgb(0, 0, 0);
+            top: 100%; 
+        }
+        a:hover{
+            color:red;
+        }
+    }   
+    .border-image{
+        .background-color{
+            background-color: #FDE9E0;
+            position: absolute;
+            top: 628%;
+            left: 60%;
+            padding: 200px;
+        }
+        .border{
+            position:relative;
+            border: 4px solid #FBD1BE;
+            padding: 0px 0px 30px 30px;
+            img{
+                width: 420px;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
+.contact{
+    background-position: 50% 50%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+
+   .form{
+       background-color: #111;
+       color: white;
+       width: 55%;
+       padding: 30px;
+
+       form{
+           border: 2px solid white;
+           padding: 30px;
+       }
+       
+    h1{
+        font-family: 'Dancing Script', cursive;
+        font-size: 4rem;
+        font-weight: lighter;
+        margin-bottom: 8px;
+    }
+    hr{
+        margin-bottom: 12px;
+        background-color: rgb(255, 255, 255);
+        height: 4px;
+        width: 20%;
+        border: 0;
+    }
+    p{
+        margin-top: 10px;
+        font-family: 'Montserrat', sans-serif;
+        word-spacing: 1px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    button{
+        margin-left: 64px;
+        padding: 10px;
+        background-color: #F7D2BE;
+        border: none;
+    }
+    .form-contact{
+        margin-bottom: 7px;
+        input, textarea{
+            width: 400px;
+            padding: 10px;
+        }
+    }
+   }
+}
+  
+footer{
+    padding: 8rem ;
+    height: 30vh;
+    background-color: black;
+    color: white;
+    .container{
+        display: flex;
+        margin-bottom: 60px;
+        .footer-text{
+            margin-right: 20%;
+            h1{
+                font-family: 'Dancing Script', cursive;
+                font-size: 1rem;
+                font-weight: lighter;
+                margin-bottom: 8px;
+            }
+            p{
+                font-family: 'Montserrat', sans-serif;
+                word-spacing: 1px;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+    .logo{
+        text-align: center;
+    }
+}
+
+@media screen and(max-width: 868px) {
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 80px;
+    }
+    .advanced{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        .adtext{
+            transform: translate(5%, 10%);
+            padding: 20px;
+        }
+        .border-image{
+            .background-color{
+                display: none;
+                top: 355%;
+            }
+            .border{
+                img{
+                    width: 360px;
+                    object-fit: cover;
+                }
+            }
+    
+        }
+    }
+
+    .advanceds{
+        display: grid;
+        margin-top: 200px;
+        grid-template-columns: repeat(2, 1fr);
+        .advimg{
+            img{
+                width: 330px;
+                height: 430px;
+                object-fit: cover;
+
+            }
+        }
+
+        .adtexts{
+            padding: 5px;
+            transform: translate(0%, 20%);
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 14px;
+            }
+            height: 430px;
+        }
+    }
+
+    .treatment{
+        margin-bottom: 150px;
+        display: flex;
+        background-position: 50% 50%;
+        padding: 4rem;
+        .treimg{
+            img{
+                width: 300px; 
+                height: 80vh;
+                object-fit: cover;
+            }
+        }
+        .treCard{
+            padding: 17px;
+            background-color: #111;
+            color: white;
+            .border{
+                border: 1px solid rgb(255, 255, 255);
+                padding: 50px;
+            }
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+    .massage{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px;
+        margin-bottom: 100px;
+        .mestext{
+            transform: translate( 0%, 0%);
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+        .border-image{
+            .background-color{
+                display: none;
+                background-color: #FDE9E0;
+                position: absolute;
+                top: 1285%;
+                left: 40%;
+                width: 300px;
+            }
+            .border{
+                position:relative;
+                border: 4px solid #FBD1BE;
+                padding: 0px 0px 50px 60px;
+                img{
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+    
+        }
+    }
+
+    .contact{
+        .form{
+            background-color: #111;
+            color: white;
+            width: 100%;
+            padding: 50px;
+            form{
+                padding: 50px;
+            }
+            
+         h1{
+             font-size: 3rem;
+         }
+         hr{
+              height: 2px;
+         }
+         p{
+             margin-top: 10px;
+             font-family: 'Montserrat', sans-serif;
+             word-spacing: 1px;
+             font-weight: 400;
+             margin-bottom: 20px;
+             font-size: 12px;
+         }
+         button{
+             position: absolute;
+             left: 24%;
+         }
+         .form-contact{
+             margin-bottom: 7px;
+             input, textarea{
+                 width: 300px;
+                 padding: 10px;
+             }
+         }
+        }
+     }
+
+     footer{
+        padding: 2rem ;
+        height: 40vh;
+        background-color: black;
+        color: white;
+        .container{
+            margin-top: 50px;
+        }
+    }
+
+    
+
+}
+
+@media screen and (max-width: 576px) {
+    nav{
+        span{
+            left: 86%;
+        }
+    }
+    header{
+        .text{
+            left: 7%;
+            top: 40%;
+            h1{
+                font-size: 70px;
+            }
+            p{
+                font-size: 15px;
+            }
+            button{
+                width: 140px;
+                height: 30px;
+            }
+        }
+    }
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 100px;
+        .cardText-image{
+           display: block;
+           .right{
+            width: 100%;
+            object-fit: cover;
+            margin-left: 0px;
+        }
+            .left{
+                width: 100%;
+                object-fit: cover;
+                margin-right: 0px;
+            }
+
+            .text-card{
+                padding: 50px;
+                margin-left: 0;
+                h1{
+                    font-family: 'Dancing Script', cursive;
+                    margin-bottom: 10px;
+                    font-size: 25px;
+                }
+                hr{
+                    margin-bottom: 10px;
+                    background-color: black;
+                    height: 2px;
+                    width: 30%;
+                    border: 0;
+                }
+                p{
+                    font-family: 'Montserrat', sans-serif;
+                    
+                    font-weight: 200;
+                }
+            }
+
+            .c1{
+                margin-left: 0px;
+            }
+            .c2{
+                margin-right: 0px;
+                color: black;
+            }
+        }
+    }
+    .advanced{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 80px;
+        .border-image{
+            margin-bottom: 120px;
+            .background-color{
+                top: 556%;
+                left: 33%;
+                padding: 230px 150px 230px 150px;
+            }
+            .border{
+                padding: 15px -10px 25px 30px;
+                img{
+                    width: 300px;
+                    height: 460px;
+                }
+            }
+        }
+        .adtext{
+            transform: translate(0%, 0%);
+            h1{
+                font-size: 2.4rem;
+            }
+            hr{
+                height: 2px;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .advanceds{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 0px 0px 0px;
+        .advimg{
+            img{
+                width: 100%;
+                object-fit: cover;
+                height: 40vh;
+            }
+        }
+        .adtexts{
+            transform: translate(0%, 0%);
+            padding: 65px;
+            h1{
+                 font-size: 2rem;
+            }
+            hr{
+                height: 2px;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+            a{
+              font-size: 0.8rem;
+              
+            }
+    
+        }
+    }
+
+    .client{
+        margin-bottom: 70px;
+        h1{
+            font-size: 3em;
+            font-family: 'Dancing Script', cursive;
+            text-align:center;
+            margin-bottom: 80px;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .clientText{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            div{
+                margin-bottom: 35px;
+            }
+        }
+    }
+    
+    .treatment{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px;
+        .treimg{
+            img{
+                width: 400px;
+            }
+        }
+    }
+    
+    .massage{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px;
+        margin-bottom: 100px;
+        .mestext{
+            transform: translate( 0%, 0%);
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+        .border-image{
+            .background-color{
+                background-color: #FDE9E0;
+                position: absolute;
+                top: 1285%;
+                left: 40%;
+                width: 300px;
+            }
+            .border{
+                position:relative;
+                border: 4px solid #FBD1BE;
+                padding: 0px 0px 50px 60px;
+                img{
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+    
+        }
+    }
+
+    .contact{
+       .form{
+           background-color: #111;
+           color: white;
+           width: 100%;
+           padding: 30px;
+           
+        h1{
+            font-size: 3rem;
+        }
+        hr{
+             height: 2px;
+        }
+        p{
+            margin-top: 10px;
+            font-family: 'Montserrat', sans-serif;
+            word-spacing: 1px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+        button{
+            margin-left: 10px;
+            padding: 10px;
+            background-color: #F7D2BE;
+        }
+        .form-contact{
+            margin-bottom: 7px;
+            input, textarea{
+                width: 300px;
+                padding: 10px;
+            }
+        }
+       }
+    }
+
+    footer{
+        padding: 2rem ;
+        height: 60vh;
+        background-color: black;
+        color: white;
+        .container{
+            display: grid;
+        grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 60px;
+            .footer-text{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
+}
