@@ -475,17 +475,32 @@ header{
             }
   
           @media screen and (max-width: $bp-medium) {
-              width: 10%
+              width: 10%;
              }
   
            @media screen and (max-width: $bp-small) {
-              width: 5%
+              width: 5%;
                
              }
 
         .border{
             border: 1px solid rgb(255, 255, 255);
             padding: 40px;
+
+            @media screen and (max-width: $bp-large) {
+                padding: 0px;
+                  
+                }
+      
+              @media screen and (max-width: $bp-medium) {
+                  padding: 10px;
+                 }
+      
+               @media screen and (max-width: $bp-small) {
+                  padding: 5px;
+                   
+                 }
+
         }
         h1{
             font-family: 'Dancing Script', cursive;
@@ -616,6 +631,8 @@ header{
         padding: 10px;
         background-color: #F7D2BE;
         border: none;
+        
+
     }
     .form-contact{
         margin-bottom: 7px;
@@ -656,7 +673,7 @@ footer{
     }
 }
 
-@media screen and(max-width: 868px) {
+@media screen and(max-width: 1024px) {
 
     .grid{
         grid-template-columns: repeat(1, 1fr);
@@ -757,6 +774,7 @@ footer{
                 top: 1285%;
                 left: 40%;
                 width: 300px;
+                
             }
             .border{
                 position:relative;
@@ -824,7 +842,7 @@ footer{
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 400px) {
     nav{
         span{
             left: 86%;
