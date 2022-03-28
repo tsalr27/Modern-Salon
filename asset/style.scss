@@ -1,9 +1,9 @@
 // Responsive breakpoints
-$bp-largest: 75em; //1200px
+$bp-largest: 90em; //1440px
 $bp-large: 64em;   // 1024px
-$bp-medium: 50em;  // 800px
-$bp-small: 30em;   // 480px
-$bp-smallest: 25em;  // 400px
+$bp-medium: 48em;  // 768px
+$bp-small: 26em;   // 425px
+$bp-smallest: 23em;  // 375px
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
 
@@ -26,23 +26,6 @@ nav{
     display: flex;
     padding: 1.6rem;
     background-color: rgb(255, 255, 255);
-    h1{
-        font-family: 'Dancing Script', cursive;
-        font-size: 30px;
-
-        @media screen and (max-width: $bp-large) {
-            font-size: 20px;
-        }
-
-        @media screen and (max-width: $bp-medium) {
-            font-size: 15px;
-        }
-
-         @media screen and (max-width: $bp-small) {
-            font-size: 10px;
-        }
-   
-   
 
     }
     .sidenav {
@@ -68,19 +51,7 @@ nav{
         display: block;
         transition: 0.3s;
 
-        @media screen and (max-width: $bp-large) {
-            font-size: 30px;
-             
-           }
- 
-         @media screen and (max-width: $bp-medium) {
-             font-size: 25px;   
-            }
- 
-          @media screen and (max-width: $bp-small) {
-             font-size: 15px;
-              
-            }
+
       }
       
       .sidenav a:hover {
@@ -119,20 +90,6 @@ header{
             font-size: 7rem;
             font-weight: lighter;
 
-            @media screen and (max-width: $bp-large) {
-                padding-top: 6rem;
-                 
-               }
-     
-             @media screen and (max-width: $bp-medium) {
-                 padding-top: 5rem;   
-                }
-     
-              @media screen and (max-width: $bp-small) {
-                 padding-top: 4rem;
-                  
-                } 
-
         }
         p{
             word-spacing: 4px;
@@ -140,19 +97,6 @@ header{
             margin-bottom: 3em;
             font-family: 'Montserrat', sans-serif;
 
-            @media screen and (max-width: $bp-large) {
-                font-size: 15px;
-                 
-               }
-     
-             @media screen and (max-width: $bp-medium) {
-                 font-size: 10px;   
-                }
-     
-              @media screen and (max-width: $bp-small) {
-                 font-size: 5px;
-                  
-                }
         }
         button{
             background-color: #F7D2BE;
@@ -191,19 +135,7 @@ header{
                 font-family: 'Dancing Script', cursive;
                 margin-bottom: 20px;
 
-                @media screen and (max-width: $bp-large) {
-                    margin-bottom: 15px;
-                     
-                   }
-         
-                 @media screen and (max-width: $bp-medium) {
-                     margin-bottom: 10px;   
-                    }
-         
-                  @media screen and (max-width: $bp-small) {
-                     margin-bottom: 5px;
-                      
-                    }
+
             }
             hr{
                 margin-bottom: 10px;
@@ -217,19 +149,6 @@ header{
                 word-spacing: 2px;
                 font-weight: 400;
 
-                @media screen and (max-width: $bp-large) {
-                    font-weight: 200;
-                     
-                   }
-         
-                 @media screen and (max-width: $bp-medium) {
-                     font-weight: 100;   
-                    }
-         
-                  @media screen and (max-width: $bp-small) {
-                     font-weight: 50;
-                      
-                    }
             }
         }
         .c1{
@@ -262,20 +181,6 @@ header{
                 img{
                     width: 420px;
                     object-fit: cover;
-
-                    @media screen and (max-width: $bp-large) {
-                        width: 350px;
-                         
-                       }
-             
-                     @media screen and (max-width: $bp-medium) {
-                         width: 250px;
-                        }
-             
-                      @media screen and (max-width: $bp-small) {
-                         width: 150;
-                          
-                        }
                 }
             }
 
@@ -288,19 +193,6 @@ header{
                 font-weight: lighter;
                 margin-bottom: 20px;
 
-                @media screen and (max-width: $bp-large) {
-                    font-size: 3rem;
-                     
-                   }
-         
-                 @media screen and (max-width: $bp-medium) {
-                     font-size: 2rem;
-                    }
-         
-                  @media screen and (max-width: $bp-small) {
-                     font-size: 1rem;
-                      
-                    }
             }
             hr{
                 margin-bottom: 50px;
@@ -316,19 +208,6 @@ header{
                 margin-bottom: 40px;
 
                 
-                @media screen and (max-width: $bp-large) {
-                    font-weight: 300;
-                     
-                   }
-         
-                 @media screen and (max-width: $bp-medium) {
-                     font-weight: 200;
-                    }
-         
-                  @media screen and (max-width: $bp-small) {
-                     font-weight: 100;
-                      
-                    }
             }
             a{
               display: inline-block;
@@ -370,20 +249,6 @@ header{
             font-weight: lighter;
             margin-bottom: 20px;
 
-            
-            @media screen and (max-width: $bp-large) {
-                font-size: 2rem;
-                 
-               }
-     
-             @media screen and (max-width: $bp-medium) {
-                 font-size: 1.4rem;
-                }
-     
-              @media screen and (max-width: $bp-small) {
-                 font-size: 1rem;
-                  
-                }
         }
         hr{
             margin-bottom: 20px;
@@ -398,20 +263,6 @@ header{
             margin-bottom: 40px;
             font-size: 0.9rem;
 
-            
-            @media screen and (max-width: $bp-large) {
-                font-size: 0.7rem;
-                 
-               }
-     
-             @media screen and (max-width: $bp-medium) {
-                 font-size: 0.6rem;
-                }
-     
-              @media screen and (max-width: $bp-small) {
-                 font-size: 0.5rem;
-                  
-                }
         }
         a{
           position: relative;
@@ -469,37 +320,9 @@ header{
         padding: 30px;
         width: 30%;
 
-        @media screen and (max-width: $bp-large) {
-            width: 15%;
-              
-            }
-  
-          @media screen and (max-width: $bp-medium) {
-              width: 10%;
-             }
-  
-           @media screen and (max-width: $bp-small) {
-              width: 5%;
-               
-             }
-
         .border{
             border: 1px solid rgb(255, 255, 255);
             padding: 40px;
-
-            @media screen and (max-width: $bp-large) {
-                padding: 0px;
-                  
-                }
-      
-              @media screen and (max-width: $bp-medium) {
-                  padding: 10px;
-                 }
-      
-               @media screen and (max-width: $bp-small) {
-                  padding: 5px;
-                   
-                 }
 
         }
         h1{
